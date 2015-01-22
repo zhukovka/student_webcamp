@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{user}} Calendar</title>
+    <style type=text/css>
+      td  { vertical-align: top; padding: 0.5em }
+      img { border:0 }
+    </style>
+  </head>
+  <body>
+    <table border=1>
+      {% for item in eventList.items|dictsort:"start.dateTime" %}
+      <tr><td><a href="{{ item.htmlLink }}">{{ item.summary }}</a></td>
+			<td>{{ item.start.dateTime }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}
+	{{courseTitle}} schedule
+{% endblock title %}
+
+{% block extraHead %}
+{% load static from staticfiles %}
+	<script>
+	var calUrl = '{{schedule.calendar}}';
+	</script>
+	{% include "courseSched/extralinks.html" %}
+	{# Fullcal #}
+	{% static "courseSched/schedule/js/fullcalendar" as fullcalendar %}
+	<link rel='stylesheet' href='{{fullcalendar}}/fullcalendar.css' />
+	<script src='{{fullcalendar}}/lib/jquery.min.js'></script>
+	<script src='{{fullcalendar}}/lib/moment.min.js'></script>
+	<script src='{{fullcalendar}}/fullcalendar.js'></script>
+	<script src='{{fullcalendar}}/lang-all.js'></script>
+	<script type='text/javascript' src='{{fullcalendar}}/gcal.js'></script>
+
+{% endblock extraHead %}
+
+
+{# Nav menu #}
+{% block courseName %}
+	<li class="custom-nav"><a  href="{% url 'index' %}">Home;</a></li>
+	<li class="custom-nav"><a class="custom-active" href="{% url 'course' courseTitle %}">{{courseTitle}};</a></li>
+{% endblock courseName %}
+
+{% block content %}
+	
+	<div class="container">
+	    <div class="row">
+	      <div class="col-sm-9">
+			<div class="monaco">
+				{{schedule.title}};
+			</div>
+			<div id="calendar"></div>
+			<a class="monaco-sm" id="render" href=''>Добавить_к_себе_в_google_календарь();</a>
+	      </div>
+	      <div class="col-sm-3"> <p class='monaco-sm'>{{schedule.title}} </p>
+			<div id="agenda">
+			</div>
+
+	      </div>
+	    </div>
+	    <div class="row pad">
+	      <div class="col-sm-6">
+				Текущий курс
+			<div id="current" class='summary'>
+			</div>
+	      </div>
+	      <div class="col-sm-6"> 
+				Слeдующий курс
+			<div id="next" class='summary'>
+			</div>
+	      </div>
+	    </div>
+	</div>
+
+
+{% endblock content %}
+
+{% block boots %}
+<script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
+{# Google JSON calendar #}
+	{% load static from staticfiles %}
+	{% static "courseSched/schedule/js/fullcalendar" as fullcalendar %}
+	<script type="text/javascript" src="{{fullcalendar}}/googlecal.js"></script>
+	<script type="text/javascript" src="{{fullcalendar}}/moment-recur-master/moment-recur.js"></script>
+	<script type="text/javascript" src="{{fullcalendar}}/calendar.js"></script>
+	<script src="http://www.google.com/calendar/feeds/{{schedule.calendar}}/public/full?alt=json-in-script&callback=agendaInsert">
+	</script>
+
+{% endblock boots %}

@@ -1,0 +1,363 @@
+gdata.io.handleScriptLoaded(
+{
+version: "1.0",
+encoding: "UTF-8",
+feed: {
+xmlns: "http://www.w3.org/2005/Atom",
+xmlns$openSearch: "http://a9.com/-/spec/opensearchrss/1.0/",
+xmlns$gCal: "http://schemas.google.com/gCal/2005",
+xmlns$gd: "http://schemas.google.com/g/2005",
+id: {
+$t: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full"
+},
+updated: {
+$t: "2014-06-23T17:12:13.000Z"
+},
+category: [
+{
+scheme: "http://schemas.google.com/g/2005#kind",
+term: "http://schemas.google.com/g/2005#event"
+}
+],
+title: {
+$t: "Java basic",
+type: "text"
+},
+subtitle: {
+$t: "Курс java basic в webcamp",
+type: "text"
+},
+link: [
+{
+rel: "alternate",
+type: "text/html",
+href: "http://www.google.com/calendar/embed?src=bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com"
+},
+{
+rel: "http://schemas.google.com/g/2005#feed",
+type: "application/atom+xml",
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full"
+},
+{
+rel: "http://schemas.google.com/g/2005#batch",
+type: "application/atom+xml",
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/batch"
+},
+{
+rel: "self",
+type: "application/atom+xml",
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full?alt=json-in-script&max-results=25"
+}
+],
+author: [
+{
+name: {
+$t: "Java basic"
+}
+}
+],
+generator: {
+$t: "Google Calendar",
+version: "1.0",
+uri: "http://www.google.com/calendar"
+},
+openSearch$totalResults: {
+$t: 3
+},
+openSearch$startIndex: {
+$t: 1
+},
+openSearch$itemsPerPage: {
+$t: 25
+},
+gCal$timezone: {
+value: "Europe/Kiev"
+},
+gCal$timesCleaned: {
+value: 0
+},
+gd$where: {
+valueString: "Киев, ул. Дарвина, 10"
+},
+entry: [
+{
+id: {
+$t: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/76jttu0fun1lkoflnc72jjikc8"
+},
+published: {
+$t: "2014-06-23T17:12:13.000Z"
+},
+updated: {
+$t: "2014-06-23T17:12:13.000Z"
+},
+category: [
+{
+scheme: "http://schemas.google.com/g/2005#kind",
+term: "http://schemas.google.com/g/2005#event"
+}
+],
+title: {
+$t: "Java Basic занятие",
+type: "text"
+},
+content: {
+$t: "",
+type: "text"
+},
+link: [
+{
+rel: "alternate",
+type: "text/html",
+href: "http://www.google.com/calendar/event?eid=NzZqdHR1MGZ1bjFsa29mbG5jNzJqamlrYzhfMjAxNDA2MjNUMTYxNTAwWiBiZmowYWJscGxqMjJjMzliMG1iaGlrbDhuZ0Bn",
+title: "alternate"
+},
+{
+rel: "self",
+type: "application/atom+xml",
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/76jttu0fun1lkoflnc72jjikc8"
+}
+],
+author: [
+{
+name: {
+$t: "darvina10@gmail.com"
+},
+email: {
+$t: "darvina10@gmail.com"
+}
+}
+],
+gd$eventStatus: {
+value: "http://schemas.google.com/g/2005#event.confirmed"
+},
+gd$where: [
+{
+valueString: "10 улица Дарвина, Киев, город Киев, Украина"
+}
+],
+gd$who: [
+{
+email: "bfj0ablplj22c39b0mbhikl8ng@group.calendar.google.com",
+rel: "http://schemas.google.com/g/2005#event.organizer",
+valueString: "Java basic"
+}
+],
+gd$recurrence: {
+$t: "DTSTART;TZID=Europe/Kiev:20140623T191500 DTEND;TZID=Europe/Kiev:20140623T211500 RRULE:FREQ=WEEKLY;UNTIL=20140714T161500Z;BYDAY=MO,FR BEGIN:VTIMEZONE TZID:Europe/Kiev X-LIC-LOCATION:Europe/Kiev BEGIN:DAYLIGHT TZOFFSETFROM:+0200 TZOFFSETTO:+0300 TZNAME:EEST DTSTART:19700329T030000 RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU END:DAYLIGHT BEGIN:STANDARD TZOFFSETFROM:+0300 TZOFFSETTO:+0200 TZNAME:EET DTSTART:19701025T040000 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU END:STANDARD END:VTIMEZONE "
+},
+gd$transparency: {
+value: "http://schemas.google.com/g/2005#event.opaque"
+},
+gCal$anyoneCanAddSelf: {
+value: "false"
+},
+gCal$guestsCanInviteOthers: {
+value: "true"
+},
+gCal$guestsCanModify: {
+value: "false"
+},
+gCal$guestsCanSeeGuests: {
+value: "true"
+},
+gCal$sequence: {
+value: 0
+},
+gCal$uid: {
+value: "76jttu0fun1lkoflnc72jjikc8@google.com"
+}
+},
+{
+id: {
+$t: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/56fmqkp6tbl55td1rkkdqlgigo"
+},
+published: {
+$t: "2014-06-05T13:52:36.000Z"
+},
+updated: {
+$t: "2014-06-06T08:49:47.000Z"
+},
+category: [
+{
+scheme: "http://schemas.google.com/g/2005#kind",
+term: "http://schemas.google.com/g/2005#event"
+}
+],
+title: {
+$t: "Урок 8",
+type: "text"
+},
+content: {
+$t: "новый урок",
+type: "text"
+},
+link: [
+{
+rel: "alternate",
+type: "text/html",
+href: "http://www.google.com/calendar/event?eid=NTZmbXFrcDZ0Ymw1NXRkMXJra2RxbGdpZ28gYmZqMGFibHBsajIyYzM5YjBtYmhpa2w4bmdAZw",
+title: "alternate"
+},
+{
+rel: "self",
+type: "application/atom+xml",
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/56fmqkp6tbl55td1rkkdqlgigo"
+}
+],
+author: [
+{
+name: {
+$t: "darvina10@gmail.com"
+},
+email: {
+$t: "darvina10@gmail.com"
+}
+}
+],
+gd$comments: {
+gd$feedLink: {
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/56fmqkp6tbl55td1rkkdqlgigo/comments"
+}
+},
+gd$eventStatus: {
+value: "http://schemas.google.com/g/2005#event.confirmed"
+},
+gd$where: [
+{
+valueString: "10 улица Дарвина, Киев, город Киев, Украина"
+}
+],
+gd$who: [
+{
+email: "bfj0ablplj22c39b0mbhikl8ng@group.calendar.google.com",
+rel: "http://schemas.google.com/g/2005#event.organizer",
+valueString: "Java basic"
+}
+],
+gd$when: [
+{
+endTime: "2014-06-06T21:00:00.000+03:00",
+startTime: "2014-06-06T19:00:00.000+03:00"
+}
+],
+gd$transparency: {
+value: "http://schemas.google.com/g/2005#event.opaque"
+},
+gCal$anyoneCanAddSelf: {
+value: "false"
+},
+gCal$guestsCanInviteOthers: {
+value: "true"
+},
+gCal$guestsCanModify: {
+value: "false"
+},
+gCal$guestsCanSeeGuests: {
+value: "true"
+},
+gCal$sequence: {
+value: 0
+},
+gCal$uid: {
+value: "56fmqkp6tbl55td1rkkdqlgigo@google.com"
+}
+},
+{
+id: {
+$t: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/so6r2q00a9pbn9g2gulqgh4kn8"
+},
+published: {
+$t: "2014-06-06T07:54:50.000Z"
+},
+updated: {
+$t: "2014-06-06T07:54:50.000Z"
+},
+category: [
+{
+scheme: "http://schemas.google.com/g/2005#kind",
+term: "http://schemas.google.com/g/2005#event"
+}
+],
+title: {
+$t: "Урок 9 ",
+type: "text"
+},
+content: {
+$t: "",
+type: "text"
+},
+link: [
+{
+rel: "alternate",
+type: "text/html",
+href: "http://www.google.com/calendar/event?eid=c282cjJxMDBhOXBibjlnMmd1bHFnaDRrbjggYmZqMGFibHBsajIyYzM5YjBtYmhpa2w4bmdAZw",
+title: "alternate"
+},
+{
+rel: "self",
+type: "application/atom+xml",
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/so6r2q00a9pbn9g2gulqgh4kn8"
+}
+],
+author: [
+{
+name: {
+$t: "darvina10@gmail.com"
+},
+email: {
+$t: "darvina10@gmail.com"
+}
+}
+],
+gd$comments: {
+gd$feedLink: {
+href: "http://www.google.com/calendar/feeds/bfj0ablplj22c39b0mbhikl8ng%40group.calendar.google.com/public/full/so6r2q00a9pbn9g2gulqgh4kn8/comments"
+}
+},
+gd$eventStatus: {
+value: "http://schemas.google.com/g/2005#event.confirmed"
+},
+gd$where: [
+{
+valueString: ""
+}
+],
+gd$who: [
+{
+email: "bfj0ablplj22c39b0mbhikl8ng@group.calendar.google.com",
+rel: "http://schemas.google.com/g/2005#event.organizer",
+valueString: "Java basic"
+}
+],
+gd$when: [
+{
+endTime: "2014-06-09T20:00:00.000+03:00",
+startTime: "2014-06-09T19:00:00.000+03:00"
+}
+],
+gd$transparency: {
+value: "http://schemas.google.com/g/2005#event.opaque"
+},
+gCal$anyoneCanAddSelf: {
+value: "false"
+},
+gCal$guestsCanInviteOthers: {
+value: "true"
+},
+gCal$guestsCanModify: {
+value: "false"
+},
+gCal$guestsCanSeeGuests: {
+value: "true"
+},
+gCal$sequence: {
+value: 0
+},
+gCal$uid: {
+value: "so6r2q00a9pbn9g2gulqgh4kn8@google.com"
+}
+}
+]
+}
+}
+)

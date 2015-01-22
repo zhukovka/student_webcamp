@@ -1,0 +1,32 @@
+/**
+ * MAIN STYLES
+ */
+@import "modules/misc";
+.summary{
+	background: $dark-grey;
+	color: #eee;
+	@include border-radius(10px);
+	@include light-border;
+	.course-title{
+		span{
+			color: $red;
+		}
+		a{
+			color: $red;
+		}
+	}
+
+	.start, .end{
+		span{
+			color: $blue;
+		}
+	}
+	p{
+		padding: 0 10px;
+		font-family: Monaco;
+		
+		&:before{
+			content: ">>>";
+		}
+	}
+}

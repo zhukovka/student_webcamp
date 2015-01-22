@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}
+	{{courseTitle}} schedule
+{% endblock title %}
+
+{% block extraHead %}
+	{% include "courseSched/extralinks.html" %}
+	
+{% endblock extraHead %}
+
+
+{# Nav menu #}
+{% block courseName %}
+	<li class="custom-nav"><a  href="{% url 'index' %}">Home;</a></li>
+	<li class="custom-nav"><a class="custom-active" href="">{{courseTitle}};</a></li>
+{% endblock courseName %}
+
+{% block content %}
+	
+	<div class="container">
+	    <div class="row">
+	      <div class="col-sm-9">
+			<div class="monaco">
+				{{course.title}} calendars;
+			</div>
+				<div class="row pad">
+			      <div class="col-sm-6">
+						Текущий курс
+					<div id="current" class='summary'>
+					</div>
+			      </div>
+			      <div class="col-sm-6"> 
+						Слeдующий курс
+					<div id="next" class='summary'>
+					</div>
+			      </div>
+				</div>
+	      </div>
+	      <div class="col-sm-3">  
+			{% for sched in schedules  %}
+			<a class="calendars" href="{{sched.title|slugify}}" id="{{sched.calendar}}" data-title="{{sched.title}}"> 
+				<p class="monaco-sm">{{sched.title}} </p>
+			</a>
+			{% endfor %}
+			
+
+	      </div>
+	    </div>
+	</div>
+
+
+{% endblock content %}
+
+{% block boots %}
+<script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
+{# Google JSON calendar #}
+	{% load static from staticfiles %}
+	{% static "courseSched/schedule/js/fullcalendar" as fullcalendar %}
+	
+	<script type="text/javascript" src="{{fullcalendar}}/allCalendars.js"></script>
+
+{% endblock boots %}

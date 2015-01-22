@@ -1,0 +1,16 @@
+{% block extraHead %}
+	{% load static from staticfiles %}
+	{% static "courseSched/schedule/" as schedFiles %}
+	<link rel="stylesheet" href="{{schedFiles}}stylesheets/screen.css">
+
+{# JQ #}
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+{# Qtip #}
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.css">
+
+{# Moment #}
+{% static "courseSched/schedule/js/fullcalendar" as fullcalendar %}
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment-with-langs.min.js"></script>
+	<script type="text/javascript" src="{{fullcalendar}}/moment-recur-master/moment-recur.js"></script>
+{% endblock extraHead %}

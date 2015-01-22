@@ -1,0 +1,145 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Utilities */
+/**
+ * ------------------------------------------------------------------------------
+ *	Settings styles
+ * ------------------------------------------------------------------------------
+ */
+/* typography */
+/* Colors */
+/* images */
+/* Mesures */
+/* Shadows */
+/**
+ * ------------------------------------------------------------------------------
+ *	Utilities
+ * ------------------------------------------------------------------------------
+ */
+/* line 7, ../sass/utilities/_utilities.scss */
+.align-left {
+  display: inline;
+  float: left;
+}
+
+/* line 11, ../sass/utilities/_utilities.scss */
+.align-right {
+  display: inline;
+  float: right;
+}
+
+/* line 15, ../sass/utilities/_utilities.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* Bootstrap */
+/**
+ * ------------------------------------------------------------------------------
+ *	Bootstrap styles
+ * ------------------------------------------------------------------------------
+ */
+/* Base */
+/**
+ * ------------------------------------------------------------------------------
+ *	Base style
+ * ------------------------------------------------------------------------------
+ */
+/* line 7, ../sass/base/_base.scss */
+.pad {
+  padding: 2% 0;
+}
+
+/* Fonts */
+/* Layout */
+/**
+ * HEADER STYLES
+ */
+/**
+ * ------------------------------------------------------------------------------
+ *	NAV STYLES
+ * ------------------------------------------------------------------------------
+ */
+/* Nav pannel */
+/**
+ * MAIN STYLES
+ */
+/**
+ * ------------------------------------------------------------------------------
+ *	Miscelanious
+ * ------------------------------------------------------------------------------
+ */
+/* line 5, ../sass/layout/_main.scss */
+.summary {
+  background: #696863;
+  color: #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: 3px solid #eee;
+  -webkit-box-shadow: #696863 0px 0px 1px, black 1px 1px 2px inset;
+  -moz-box-shadow: #696863 0px 0px 1px, black 1px 1px 2px inset;
+  box-shadow: #696863 0px 0px 1px, black 1px 1px 2px inset;
+}
+/* line 11, ../sass/layout/_main.scss */
+.summary .course-title span {
+  color: #dc816e;
+}
+/* line 14, ../sass/layout/_main.scss */
+.summary .course-title a {
+  color: #dc816e;
+}
+/* line 20, ../sass/layout/_main.scss */
+.summary .start span, .summary .end span {
+  color: #89c3d9;
+}
+/* line 24, ../sass/layout/_main.scss */
+.summary p {
+  padding: 0 10px;
+  font-family: Monaco;
+}
+/* line 28, ../sass/layout/_main.scss */
+.summary p:before {
+  content: ">>>";
+}
+
+/**
+ * FOOTER STYLES
+ */
+/* Modules */
+/**
+ * ------------------------------------------------------------------------------
+ *	Button styles
+ * ------------------------------------------------------------------------------
+ */
+/**
+ * ------------------------------------------------------------------------------
+ *	Divider styles
+ * ------------------------------------------------------------------------------
+ */
+/**
+ * ------------------------------------------------------------------------------
+ *	Froms styles
+ * ------------------------------------------------------------------------------
+ */
+/**
+ * ------------------------------------------------------------------------------
+ *	Tables styles
+ * ------------------------------------------------------------------------------
+ */
+/**
+ * ------------------------------------------------------------------------------
+ *	Miscelanious
+ * ------------------------------------------------------------------------------
+ */
+/* Theme */
+/**
+ * ------------------------------------------------------------------------------
+ *	Theme styles
+ * ------------------------------------------------------------------------------
+ */

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{courseTitle}}
+{% endblock title %}
+
+{% block courseName %}
+	<li class="custom-nav"><a  href="{% url 'index' %}">Home;</a></li>
+	<li class="custom-nav"><a class="custom-active" href="">{{courseTitle}};</a></li>
+{% endblock courseName %}
+{% block content %}
+	
+	<div class="container">
+	    <div class="row">
+	      <div class="col-sm-9">
+			<div class="monaco">
+				{{courseTitle}}
+			</div>
+			{% if contents %}
+				{% for content in contents %}
+					<div>{{content.name}}</div>	
+				{% endfor %}
+			{% endif %}
+	      </div>
+	      <div class="col-sm-3">
+		      {% if schedules %}
+			    <h3 class="monaco-sm">
+			      <a href="schedules">
+			      		{{courseTitle}} calendars;
+			      </a>
+			    </h3>
+			      	
+		      {% endif %}
+
+	      </div>
+	    </div>
+	</div>
+
+
+
+{% endblock content %}
+

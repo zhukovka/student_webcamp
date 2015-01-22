@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Header -->
+	<header>
+		<div class="container">
+		    {% if courses %}
+				{% for course in courses %}
+					{% if forloop.counter0|divisibleby:"2" %}
+				    <div class="row course-name">
+				      <div class="col-sm-4 monaco"><a href="/courses/{{course.title}}">{{course.title|upper}}</a></div>
+					
+					{% else %}
+
+					  <div class="col-sm-4 col-sm-offset-4 monaco"><a href="/courses/{{course.title}}">{{course.title|title }}</a></div>
+				    </div>
+
+					{% endif %}
+
+				{% endfor %}
+			    </div>
+			    
+			{% endif %}
+		</div>
+	</header>
+
+				<div><a href="/courses/{{course.title}}">{{course.title}}</a></div>
+				
+		</div>
+	
+{% endblock content %}
+
+{# Fooyer #}
+{% block footer %}
+		
+    	<div class="container">
+    		<hr>
+    	    <div class="pull-left">&copy; Webcamp 2014</div>
+			<div class="pull-right">
+				<a href="#">contacts;</a>
+				<a href="#">facebook;</a>
+				<a href="#">g+;</a>
+			</div>
+    	</div>
+{% endblock footer %}

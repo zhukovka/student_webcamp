@@ -1,0 +1,88 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+	.monaco{
+		font-size:150%;
+	}
+ }
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) { 
+
+/*Monaco */
+	.monaco{
+		font-size:100%;
+		line-height:50px;
+	}
+	.container .monaco{
+		padding-left: 2em;
+	}
+	.monaco:before{
+		width: 18px;
+		height: 64px;
+		position: absolute;
+		margin-left: -18px;
+		top:10%;
+	}
+	.monaco:after{
+		background-repeat: no-repeat;
+		width: 18px;
+		height: 64px;
+		position: absolute;
+		top:10%;
+	}
+
+/*Navigation */
+	.navbar-header>img{
+		height: 50px;
+		width: auto;
+	}
+	.navbar-header>div.monaco:before{
+		position: fixed;
+		top:1.5%;
+	}
+	.navbar-header>div.monaco:after{
+		position: fixed;
+		top:1.5%;
+	}
+	
+	.custom-nav>a{
+		font-size: 100%;
+	}
+	
+	.custom-active{
+		font-size:120% !important;
+	}
+	.custom-active:before{
+		width: 12px;
+		height: 25px;
+		margin-left: -12px;
+	}
+	.custom-active:after{
+		width: 12px;
+		height: 25px;
+	}
+
+/*Header*/
+	header{
+		background-position: center right;
+	}
+	.course-name>div:first-child{
+		text-align: left;
+		margin-top: 0;
+		padding-left: 10%;
+		padding-bottom: 5%;
+	}
+	.course-name>div:last-child{
+		/*text-align: right;*/
+		margin-top: 0;
+		padding-left: 5%;
+		padding-bottom: 5%;
+	}
+	
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

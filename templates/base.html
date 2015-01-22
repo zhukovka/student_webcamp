@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}
+		student.webcamp
+	{% endblock title %}</title>
+	{% load static from staticfiles %}
+	{% static "css/studentWebcamp/stylesheets/" as staticCss %}
+	{% static "courses/" as courseFiles %}
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="{{staticCss}}screen.css">
+	<link rel="stylesheet" href="{{courseFiles}}bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{courseFiles}}css/style.css">
+	<link rel="stylesheet" href="{{courseFiles}}css/mediaQueryStyles.css">
+	{% block extraHead %}{% endblock extraHead %}
+</head>
+<body>
+<!-- Navigation -->
+	<nav>
+		<div class="navbar navbar-default">
+			<div class="container-fluid">
+						<div class="navbar-header">
+				          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				            <span class="sr-only">Toggle navigation</span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				          </button>
+					<a href="{% url 'index' %}"><img src="{{courseFiles}}images/logo.png" alt="">
+					<div class="nav-brand monaco">
+						<span>student</span><span>.webcamp</span></div>
+					    </div>
+					</a>
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							{% block courseName %}
+							<li class="custom-nav"><a class="custom-active" href="{% url 'index' %}">Home;</a></li>
+								
+							{% endblock courseName %}
+							<li class="custom-nav"><a href="">Contacts;</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</nav>
+
+{% block content %}
+	
+{% endblock content %}
+
+{# Footer #}
+	{% block footer %}
+		
+	<footer>
+    	<div class="container">
+    		<div class="container">
+    		    <div class="row">
+    		    	{% if courses %}
+						{% for course in courses %}
+    		      		<div class="col-sm-3"><a href="/courses/{{course.title}}">{{course.title}}</a></div>
+
+						{% endfor %}
+		      		{% endif %}
+    		    </div>
+    		</div>
+    		<hr>
+    	    <div class="pull-left">&copy; Webcamp 2014</div>
+			<div class="pull-right">
+				<a href="#">contacts;</a>
+				<a href="#">facebook;</a>
+				<a href="#">g+;</a>
+			</div>
+    	</div>
+    </footer>
+	{% endblock footer %}
+
+{% block boots %}
+	
+	 <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
+{% endblock boots %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{user}} YT</title>
+    <style type=text/css>
+      td  { vertical-align: top; padding: 0.5em }
+      img { border:0 }
+    </style>
+  </head>
+  <body>
+    <table border=1>
+      {% for item in pListItems.items %}
+      <tr><td>{{ item.snippet.resourceId.videoId }}</td>
+			<td>{{ item.snippet.title }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <iframe width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLO33wg5Q-Gf3ceQEC6HMAIMCOhhnxGzEE" frameborder="0" allowfullscreen></iframe>
+    <video width="640"  height="360" src="http://youtu.be/oggxmggQxkU"  controls preload>
+<p> Try this page in a modern browser! Or you can <a  href="http://www.youtube.com/demo/google_main.mp4">download the  video</a> instead.</p>
+  </video>
+  </body>
+</html>
